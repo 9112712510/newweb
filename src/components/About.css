@@ -1,0 +1,45 @@
+/* About section */
+.about {
+  padding: 6rem 1rem 4rem;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  color: #e0e0e0;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  animation: fadeInUp 0.8s ease-out 0.1s both;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #7f5cff, #ff9f1c);
+  border-radius: 2px;
+}
+
+.section-content {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  animation: fadeInUp 0.8s ease-out 0.3s both;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
