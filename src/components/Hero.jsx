@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from 'react';
 import './Hero.css';
+import prathamImage from '../assets/pratham.png';
 
 const roles = ['ReactJS Developer', 'Web Developer', 'Full Stack Developer'];
 
@@ -111,7 +112,7 @@ export default function Hero() {
           onMouseLeave={handlePhotoMouseLeave}
         >
           <img
-            src="src/assets/pratham.png"
+            src={prathamImage}
             alt="Prathamesh Kanse"
             className="hero-image"
             ref={photoRef}
