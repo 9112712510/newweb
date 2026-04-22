@@ -111,7 +111,7 @@ export default function Hero() {
           onMouseLeave={handlePhotoMouseLeave}
         >
           <img
-            src="/assets/pratham.jpeg"
+            src="src/assets/pratham.png"
             alt="Prathamesh Kanse"
             className="hero-image"
             ref={photoRef}

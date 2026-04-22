@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import './Education.css';
 import pdeaLogo from '../assets/pdea.webp';
 import rjspmLogo from '../assets/rjspm.jpg';
+import dypcmrLogo from '../assets/dypcmr-logo.webp';
 
 export default function Education() {
   const sectionRef = useRef(null);
@@ -39,6 +40,41 @@ export default function Education() {
       <h2 className="education-title">Education</h2>
 
       <div className="education-timeline">
+        {/* Row 0: MCA on right */}
+        <div className="education-spacer" />
+
+        <div className="education-timeline-node education-node-0">
+          <div className="education-timeline-node-circle">
+            <img
+              src={dypcmrLogo}
+              alt="DYPCMR logo"
+              className="education-timeline-logo-img"
+            />
+          </div>
+          <p className="education-timeline-date education-timeline-date--left">
+            Sep 2022 - Jun 2024
+          </p>
+        </div>
+
+        <div className="education-card education-card-0">
+          <div className="education-institute-logo">
+            <img
+              src={dypcmrLogo}
+              alt="DYPCMR logo"
+              className="education-institute-logo-img"
+            />
+          </div>
+          <h3 className="education-card-title">
+            Dr. D. Y. Patil College
+          </h3>
+          <p className="education-card-subtitle">Master of Computer Applications (MCA)</p>
+          <p className="education-card-grade">Grade: 7.88 CGPA</p>
+          <p className="education-card-description">
+            Completed Master&apos;s degree in Computer Application from Dr.
+            D. Y. Patil College, Pune, Maharashtra.
+          </p>
+        </div>
+
         {/* Row 1: Bachelor degree on left */}
         <div className="education-card education-card--right education-card-1">
           <div className="education-institute-logo">
@@ -60,6 +96,12 @@ export default function Education() {
             Ramkrishna More College, Pimpri-Chinchwad, Pune, Maharashtra.
           </p>
         </div>
+
+
+
+        
+
+
 
         <div className="education-timeline-node education-node-1">
           <div className="education-timeline-node-circle">
